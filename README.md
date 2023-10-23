@@ -7,7 +7,22 @@ Team:
 
 ## Design
 
+The following diagram shows the architecture of the CarCar application. The application consists of three microservices including inventory, sales, and service. The sales and service microservices poll inventory for the list auomobiles. The automobileVO serves as the value object in both of these microservices.
+
 ![diagram of CarCar application](Beta_Diagram.png)
+
+## Inventory microservice
+
+With in the inventory microservice there will be three models including Manufacturer, VehicleModel, and Automobile. The model for the Manufacturer will include a name field. The VehicleModel model will include the following fields: name, picture_url, and manufactuer_id(ForeignKey). The Automobile model will include the following fields: color, year, vin, and model(ForeignKey).
+
+The automobile api will have the following routes:
+
+- `http://localhost:8100/api/manufacturers/` This route is used to get the list of all manufacturers using a `GET` request and create a new manufacturer using a `POST` request.
+- `http://localhost:8100/api/manufacturers/:id/` This route is used to delete a specific manufacturer using a `DELETE` request, edit a manufacturer using a `POST` request, and get details on a specific manufacturer using a `GET` request.
+- `http://localhost:8100/api/models/` This route is used to get the list of all vehicle models using a `GET` request and create a new vehicle model using a `POST` request.
+- `http://localhost:8100/api/models/:id/` This route is used to delete a specific vehicle model using a `DELETE` request, edit a vehicle model using a `POST` request, and get details on a specific vehicle model using a `GET` request.
+- `http://localhost:8100/api/automobiles/` This route is used to get the list of all automobiles using a `GET` request and create a new automobile using a `POST` request.
+- `http://localhost:8100/api/manufacturers/:vin/` This route is used to delete a specific automobile using a `DELETE` request, edit an automobile using a `POST` request, and get details on a specific automobile using a `GET` request.
 
 ## Service microservice
 
