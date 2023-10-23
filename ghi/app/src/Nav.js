@@ -38,6 +38,24 @@ function Nav() {
                 Create a Manufacturer
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link active"
+                aria-current="page"
+                to="/models"
+              >
+                Models
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link active"
+                aria-current="page"
+                to="/models/new"
+              >
+                Create a Vehicle Model
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
