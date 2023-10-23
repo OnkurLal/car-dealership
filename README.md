@@ -10,9 +10,16 @@ Team:
 ![diagram of CarCar application](Beta_Diagram.png)
 
 ## Service microservice
+  The Service microservices will have three models. Those three models are Technician,AutomobileVO, and a(n) Appointment model. The Technician model will have the following fields: First name, Last name, and their employee ID. The AutomobileVO will have the Vin number and the Sold fields. Last is the Appointment model which will have the date_time, reason, status,vin number, and technician fields. The only two foreign keys that will be in this microservice will be the Technician field, and the AutomobileVO.
 
-Explain your models and integration with the inventory
-microservice, here.
+  The services will have the following routes:
+  `	http://localhost:8080/api/technicians/` - 'GET' request to get a list of all the technicians and 'POST' request to create a new technician.
+  `	http://localhost:8080/api/technicians/` - 'DELETE' request to delete a specific technician.
+  `http://localhost:8080/api/appointments/` - 'GET' request to get a list of all the appointments and 'POST' request to create a new appointment.
+  `http://localhost:8080/api/appointments/` - 'DELETE' request to delete a specific appointment.
+  `	http://localhost:8080/api/appointments/:id/cancel/`- uses a 'PUT' to set appointment status to cancelled.
+  `	http://localhost:8080/api/appointments/:id/finish/`- uses a 'PUT' to set appointment status to finished.
+
 
 ## Sales microservice
 
