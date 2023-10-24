@@ -41,7 +41,7 @@ The automobile api will have the following routes:
 
 ## Service microservice
 
-The Service microservices will have three models. Those three models are Technician,AutomobileVO, and a(n) Appointment model. The Technician model will have the following fields: First name, Last name, and their employee ID. The AutomobileVO will have the Vin number and the Sold fields. Last is the Appointment model which will have the date_time, reason, status,vin number, and technician fields. The only two foreign keys that will be in this microservice will be the Technician field, and the AutomobileVO.
+The Service microservices will have three models. Those three models are Technician,AutomobileVO, and an Appointment model. The Technician model will have the following fields: First name, Last name, and their employee ID. The AutomobileVO will have the Vin number and the Sold fields. Last is the Appointment model which will have the date_time, reason, status,vin number, and technician fields. The only two foreign keys that will be in this microservice will be the Technician field, and the AutomobileVO.
 
 The services will have the following routes:
 
@@ -56,7 +56,7 @@ The services will have the following routes:
 
 With in the sales microservice there will be four models including Salesperson, Customer, Sale, and Sale. The model for the Salesperson will include the following fields: first_name, last_name, employee_id. The Customer model will include the following fields: first_name, last_name, address, and phone_number. The Sale model will include the following fields: automobile, salesperson, customer and price. All of the fields will be a foreign key on this model except the price field. The AutomobileVO model will have vin and sold (booloean) as fields. The Sales microservice will be polling the Inventory service to get the a list of automobiles every 60 seconds.
 
-Also in the Sales microservice there will be the poller. In the poller there will be an automobileVO model as well. The poller will reach out to the inventory api at `http://inventory-api:8000/api/automobiles/` to get the current list of automobiles. Each of the automobiles will then have an instance created in the sales api.
+Also in the Sales microservice there will be the poller. In the poller there will be an automobileVO model as well. The poller will reach out to the inventory api at `http://project-beta-inventory-api-1:8000/api/automobiles/` to get the current list of automobiles. Each of the automobiles will then have an instance created in the sales api.
 
 The sales api will have the following routes:
 

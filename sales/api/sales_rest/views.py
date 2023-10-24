@@ -27,7 +27,7 @@ def api_salespeople(request):
             response = JsonResponse(
                 {"message": "Could not create the salesperson, please try again."}
             )
-            response.status_code = 400
+            response.status_code = 404
             return response
 
 
@@ -41,8 +41,11 @@ def api_salesperson(request, id):
             encoder=SalespersonEncoder,
             safe=False,            )
     except Salesperson.DoesNotExist:
-        return JsonResponse({"message": "Salesperson does not exist, please try again."})
-
+        response = JsonResponse(
+            {"message": "Salesperson does not exist, please try again."}
+        )
+        response.status_code = 404
+        return response
 
 @require_http_methods(["GET", "POST"])
 def api_customers(request):
@@ -65,7 +68,7 @@ def api_customers(request):
             response = JsonResponse(
                 {"message": "Could not create customer, please try again."}
             )
-            response.status_code = 400
+            response.status_code = 404
             return response
 
 @require_http_methods(["DELETE"])
@@ -79,9 +82,11 @@ def api_customer(request, id):
             safe=False
         )
     except Customer.DoesNotExist:
-        return JsonResponse(
+        response = JsonResponse(
             {"message": "Customer does not exist, please try again."}
         )
+        response.status_code = 404
+        return response
 
 @require_http_methods(["GET", "POST"])
 def api_sales(request):
@@ -113,7 +118,7 @@ def api_sales(request):
             response = JsonResponse(
                 {"message": "Could not create sale, please try again."}
             )
-            response.status_code = 400
+            response.status_code = 404
             return response
 
 
@@ -128,6 +133,8 @@ def api_sale(request, id):
             safe=False
         )
     except Sale.DoesNotExist:
-        return JsonResponse(
+        response = JsonResponse(
             {"message": "Sale does not exist, please try again."}
         )
+        response.status_code = 404
+        return response
