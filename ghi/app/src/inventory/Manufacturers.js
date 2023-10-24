@@ -13,10 +13,11 @@ const Manufacturers = () => {
 
   useEffect(() => {
     loadManufacturers();
-  }, [manufacturers]);
+  }, []);
 
   return (
     <>
+      <h1 className="my-3">Manufacturers</h1>
       <table className="table table-striped">
         <thead>
           <tr>
@@ -26,7 +27,7 @@ const Manufacturers = () => {
         <tbody>
           {manufacturers.map((manufacturer) => {
             return (
-              <tr key={manufacturer.name}>
+              <tr key={manufacturer.id}>
                 <td>{manufacturer.name}</td>
               </tr>
             );

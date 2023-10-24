@@ -34,7 +34,7 @@ function CreateVehicleModel() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = {};
-    data.manufacturer = manufacturer;
+    data.manufacturer_id = manufacturer;
     data.name = name;
     data.picture_url = picture_url;
 
@@ -50,7 +50,6 @@ function CreateVehicleModel() {
     const response = await fetch(url, fetchConfig);
     if (response.ok) {
       const newModel = await response.json();
-      console.log(newModel);
     }
     setManufacturer("");
     setName("");
