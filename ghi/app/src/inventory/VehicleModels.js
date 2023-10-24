@@ -33,7 +33,7 @@ function VehicleModel() {
               <tr key={model.id}>
                 <td>{model.name}</td>
                 <td>{model.manufacturer.name}</td>
-                <td>{model.picture_url}</td>
+                <td><img src={model.picture_url} alt="image of car" width = "100" height= "75" /></td>
               </tr>
             );
           })}
