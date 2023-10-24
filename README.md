@@ -5,6 +5,21 @@ Team:
 - Onkur - Which microservice? Sales
 - Micheal - Which microservice? Service
 
+## How to use this application
+
+- Clone this repo
+  - `git clone https://gitlab.com/Onkurlal/project-beta`
+- Navigate to project-beta
+  - `cd project-beta`
+- Make sure [Docker](https://www.docker.com/get-started/) is installed on your machine
+- Create the volume
+  - `docker volume create beta-data`
+- Build docker images
+  - `docker-compose build`
+- Build docker containers from images
+  - `docker-compose up`
+- Access the frontend React app on `http://localhost:3000`
+
 ## Design
 
 The following diagram shows the architecture of the CarCar application. The application consists of three microservices including inventory, sales, and service. The sales and service microservices poll inventory for the list auomobiles. The automobileVO serves as the value object in both of these microservices.
