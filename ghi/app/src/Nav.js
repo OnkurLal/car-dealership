@@ -74,6 +74,69 @@ function Nav() {
                 Create an Automobile
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link active"
+                aria-current="page"
+                to="/salespeople"
+              >
+                Salespeople
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link active"
+                aria-current="page"
+                to="/salespeople/new"
+              >
+                Add a Salesperson
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link active"
+                aria-current="page"
+                to="/customers"
+              >
+                Customers
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link active"
+                aria-current="page"
+                to="/customers/new"
+              >
+                Add a Customer
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link active"
+                aria-current="page"
+                to="/sales"
+              >
+                Sales
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link active"
+                aria-current="page"
+                to="/sales/new"
+              >
+                Add a Sale
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link active"
+                aria-current="page"
+                to="/sales/history"
+              >
+                Sales History
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
