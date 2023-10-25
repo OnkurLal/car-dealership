@@ -54,7 +54,7 @@ def api_technicians(request):
             )
         except Technician.DoesNotExist:
             response = JsonResponse({"message": "Could not create a Technician"})
-            response.status_code = 400
+            response.status_code = 404
             return response
 
 
@@ -70,7 +70,9 @@ def api_technician(request, id):
                 safe=False,
             )
         except Technician.DoesNotExist:
-            return JsonResponse({"'message": "'Does not exist"})
+            response = JsonResponse({"'message": "'Does not exist"})
+            response.status_code = 404
+            return response
 
 
 @require_http_methods(["GET", "POST"])
@@ -95,7 +97,7 @@ def api_appointments(request):
             )
         except:
             response = JsonResponse({"message": "Could not create an appointment"})
-            response.status_code = 400
+            response.status_code = 404
             return response
 
 
@@ -111,7 +113,9 @@ def api_appointment(request, id):
                 safe=False,
             )
         except Appointment.DoesNotExist:
-            return JsonResponse({"message": "Does not exist"})
+            response = JsonResponse({"message": "Does not exist"})
+            response.status_code = 404
+            return response
 
 
 @require_http_methods(["PUT"])
