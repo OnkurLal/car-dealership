@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-
-function CreateAppointmentForm(){
+function CreateAppointmentForm() {
   const [vin, setVin] = useState("");
   const [customer, setCustomer] = useState("");
   const [date, setDate] = useState("");
@@ -68,7 +67,6 @@ function CreateAppointmentForm(){
     const response = await fetch(serviceUrl, fetchConfig);
     if (response.ok) {
       const newService = await response.json();
-      console.log(newService);
     }
 
     setVin("");
@@ -177,5 +175,5 @@ function CreateAppointmentForm(){
       </div>
     </>
   );
-};
+}
 export default CreateAppointmentForm;

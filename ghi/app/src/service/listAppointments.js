@@ -29,7 +29,6 @@ function ListAppointments() {
     const response = await fetch(url, fetchConfig);
     fetchData();
   };
-  console.log(appointments);
   const fetchData = async () => {
     const url = "http://localhost:8080/api/appointments/";
     const auto_url = "http://localhost:8100/api/automobiles/";
