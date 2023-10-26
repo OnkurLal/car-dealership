@@ -18,13 +18,26 @@ Team:
   - `docker-compose build`
 - Build docker containers from images
   - `docker-compose up`
+- Create super user
+  - Go to Docker Desktop and open the service-api-1 container
+  - Click on exec and type `python manage.py createsuperuser`
+  - Enter requested information
+- Add stauses for appointments
+  - go to `http://localhost:8080/admin`
+  - login with superuser credentials
+  - click on statuss and add the following stauses:
+    - `FINISHED`
+    - `CANCELED`
+    - `CREATED`
 - Access the frontend React app on `http://localhost:3000`
 
 ## Design
 
-The following diagram shows the architecture of the CarCar application. The application consists of three microservices including inventory, sales, and service. The sales and service microservices poll inventory for the list auomobiles. The automobileVO serves as the value object in both of these microservices.
+The following diagram shows the architecture of the CarCar application. The application consists of three microservices including inventory, sales, and service. The sales and service microservices poll inventory for the list auomobiles.
 
 ![diagram of CarCar application](Beta_Diagram.png)
+
+![diagram of Entites and Value Objects](entities_value_objects.png)
 
 ## Inventory microservice
 
