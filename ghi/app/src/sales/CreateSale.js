@@ -80,7 +80,7 @@ const CreateSale = () => {
     }
 
     const automobileUrl = `http://localhost:8100/api/automobiles/${vin}/`;
-    const sold = { sold: "True" };
+    const sold = { sold: true };
     const automobileFetchConfig = {
       method: "put",
       body: JSON.stringify(sold),
