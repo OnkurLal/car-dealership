@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-from .models import Technician, AutomobileVO, Appointment, Status
+from .models import Technician, AutomobileVO, Appointment
 from common.json import ModelEncoder
 from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
@@ -19,11 +19,6 @@ class AutomobileVOEncoder(ModelEncoder):
     properties = ["vin", "sold"]
 
 
-class StatusEncoder(ModelEncoder):
-    model = Status
-    properties = ["name"]
-
-
 class AppointmentEncoder(ModelEncoder):
     model = Appointment
     properties = [
@@ -35,7 +30,7 @@ class AppointmentEncoder(ModelEncoder):
         "technician",
         "status",
     ]
-    encoders = {"technician": TechnicianEncoder(), "status": StatusEncoder()}
+    encoders = {"technician": TechnicianEncoder()}
 
 
 @require_http_methods(["GET", "POST"])

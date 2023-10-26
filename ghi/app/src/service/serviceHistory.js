@@ -96,7 +96,7 @@ function ServiceHistory() {
                   {appointment.technician.last_name}
                 </td>
                 <td>{appointment.reason}</td>
-                <td>{appointment.status.name}</td>
+                <td>{appointment.status}</td>
                 <td></td>
               </tr>
             );

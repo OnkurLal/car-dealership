@@ -37,7 +37,7 @@ function ListAppointments() {
     if (response.ok && auto_response.ok) {
       const data = await response.json();
       const created_appointments = data.appointments.filter(
-        (appointment) => appointment.status.name === "CREATED"
+        (appointment) => appointment.status === "CREATED"
       );
       const auto_data = await auto_response.json();
       setAppointments(created_appointments);
