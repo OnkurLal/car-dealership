@@ -18,17 +18,6 @@ Team:
   - `docker-compose build`
 - Build docker containers from images
   - `docker-compose up`
-- Create super user
-  - Go to Docker Desktop and open the service-api-1 container
-  - Click on exec and type `python manage.py createsuperuser`
-  - Enter requested information
-- Add stauses for appointments
-  - go to `http://localhost:8080/admin`
-  - login with superuser credentials
-  - click on statuss and add the following stauses in the following order:
-    1. `FINISHED`
-    2. `CANCELED`
-    3. `CREATED`
 - Access the frontend React app on `http://localhost:3000`
 
 ## Design
