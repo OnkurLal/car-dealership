@@ -8,6 +8,7 @@ function MainPage() {
           management!
         </p>
       </div>
+      <img alt="dealership" src="Dealership.avif"></img>
     </div>
   );
 }

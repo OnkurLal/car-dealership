@@ -20,168 +20,189 @@ function Nav() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
+          <li className="nav-item dropdown">
+          <NavLink className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Inventory
+          </NavLink>
+          <ul className="dropdown-menu">
+          <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/manufacturers"
               >
                 Manufacturers
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/manufacturers/new"
               >
                 Create a Manufacturer
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/models"
               >
                 Models
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/models/new"
               >
                 Create a Vehicle Model
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/automobiles"
               >
                 Automobiles
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/automobiles/new"
               >
                 Create an Automobile
               </NavLink>
             </li>
-            <li className="nav-item">
+          </ul>
+        </li>
+        <li className="nav-item dropdown">
+          <NavLink className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Service
+          </NavLink>
+          <ul className="dropdown-menu">
+            <li>
               <NavLink
-                className="nav-link active"
-                aria-current="page"
-                to="/appointments/new"
-              >
-                Create an Appointment
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/technicians/new"
               >
                 Add a Technician
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/technicians"
               >
                 Technicians
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/appointments"
               >
                 Service Appointments
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
+                aria-current="page"
+                to="/appointments/new"
+              >
+                Create an Appointment
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="dropdown-item"
                 aria-current="page"
                 to="/appointments/history"
               >
                 Service history
               </NavLink>
             </li>
-            <li className="nav-item">
+          </ul>
+        </li>
+        <li className="nav-item dropdown">
+          <NavLink className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sales
+          </NavLink>
+          <ul className="dropdown-menu">
+          <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/salespeople"
               >
                 Salespeople
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/salespeople/new"
               >
                 Add a Salesperson
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/customers"
               >
                 Customers
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/customers/new"
               >
                 Add a Customer
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/sales"
               >
                 Sales
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/sales/new"
               >
                 Add a Sale
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                className="nav-link active"
+                className="dropdown-item"
                 aria-current="page"
                 to="/sales/history"
               >
                 Sales History
               </NavLink>
             </li>
+          </ul>
+        </li>
           </ul>
         </div>
       </div>
