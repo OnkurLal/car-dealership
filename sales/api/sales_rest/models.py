@@ -32,7 +32,7 @@ class Sale(models.Model):
     automobile = models.ForeignKey(AutomobileVO, related_name='sales', on_delete=models.CASCADE)
     salesperson = models.ForeignKey(Salesperson, related_name='sales', on_delete=models.CASCADE)
     customer = models.ForeignKey(Customer, related_name='sales', on_delete=models.CASCADE)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
+    price = models.DecimalField(max_digits=15, decimal_places=2)
 
     def get_api_url(self):
         return reverse("api_sale", kwargs={"id": self.id})

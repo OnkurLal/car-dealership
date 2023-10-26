@@ -33,7 +33,7 @@ class Appointment(models.Model):
     technician = models.ForeignKey(
         Technician,
         related_name="appointments",
-        on_delete=models.PROTECT,
+        on_delete=models.CASCADE,
     )
 
     status = models.ForeignKey(

@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/">
           CarCar
@@ -28,7 +28,6 @@ function Nav() {
           <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/manufacturers"
               >
                 Manufacturers
@@ -37,7 +36,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/manufacturers/new"
               >
                 Create a Manufacturer
@@ -46,7 +44,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/models"
               >
                 Models
@@ -55,7 +52,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/models/new"
               >
                 Create a Vehicle Model
@@ -64,7 +60,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/automobiles"
               >
                 Automobiles
@@ -73,7 +68,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/automobiles/new"
               >
                 Create an Automobile
@@ -89,7 +83,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/technicians/new"
               >
                 Add a Technician
@@ -98,7 +91,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/technicians"
               >
                 Technicians
@@ -107,7 +99,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/appointments"
               >
                 Service Appointments
@@ -116,7 +107,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/appointments/new"
               >
                 Create an Appointment
@@ -125,7 +115,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/appointments/history"
               >
                 Service history
@@ -141,7 +130,6 @@ function Nav() {
           <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/salespeople"
               >
                 Salespeople
@@ -150,7 +138,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/salespeople/new"
               >
                 Add a Salesperson
@@ -159,7 +146,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/customers"
               >
                 Customers
@@ -168,7 +154,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/customers/new"
               >
                 Add a Customer
@@ -177,7 +162,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/sales"
               >
                 Sales
@@ -186,7 +170,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/sales/new"
               >
                 Add a Sale
@@ -195,7 +178,6 @@ function Nav() {
             <li>
               <NavLink
                 className="dropdown-item"
-                aria-current="page"
                 to="/sales/history"
               >
                 Sales History
