@@ -25,10 +25,10 @@ Team:
 - Add stauses for appointments
   - go to `http://localhost:8080/admin`
   - login with superuser credentials
-  - click on statuss and add the following stauses:
-    - `FINISHED`
-    - `CANCELED`
-    - `CREATED`
+  - click on statuss and add the following stauses in the following order:
+    1. `FINISHED`
+    2. `CANCELED`
+    3. `CREATED`
 - Access the frontend React app on `http://localhost:3000`
 
 ## Design
