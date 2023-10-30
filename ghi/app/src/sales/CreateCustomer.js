@@ -59,7 +59,7 @@ const CreateCustomer = () => {
       <div className="row">
         <div className="offset-3 col-6">
           <div className="shadow p-4 mt-4">
-            <h1>Add a Customer</h1>
+            <h1 className=" mb-3 text-white">Add a Customer</h1>
             <form onSubmit={handleSubmit} id="create-conference-form">
               <div className="form-floating mb-3">
                 <input

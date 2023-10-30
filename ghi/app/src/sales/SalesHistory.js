@@ -35,7 +35,7 @@ const SaleHistory = () => {
   }, [salesperson]);
   return (
     <>
-      <h1 className="my-3">Salesperson History</h1>
+      <h1 className="my-3 text-white">Salesperson History</h1>
       <div className="mb-3">
         <select
           onChange={handleSalespersonChange}
@@ -55,7 +55,7 @@ const SaleHistory = () => {
           })}
         </select>
       </div>
-      <table className="table table-striped">
+      <table className="table table-striped table-dark opacity-75">
         <thead>
           <tr>
             <th>Salesperson</th>

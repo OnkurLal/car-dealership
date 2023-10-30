@@ -52,8 +52,8 @@ function ListAppointments() {
 
   return (
     <>
-      <h1 className="my-3">Appointments</h1>
-      <table className="table table-striped">
+      <h1 className="my-3 text-white">Appointments</h1>
+      <table className="table table-striped table-dark opacity-75">
         <thead>
           <tr>
             <th>Vin</th>

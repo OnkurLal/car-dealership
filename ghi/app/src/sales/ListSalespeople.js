@@ -17,8 +17,8 @@ const ListSalespeople = () => {
 
   return (
     <>
-      <h1 className="my-3">Salespeople</h1>
-      <table className="table table-striped">
+      <h1 className="my-3 text-white">Salespeople</h1>
+      <table className="table table-striped table-dark opacity-75">
         <thead>
           <tr>
             <th>Employe Id</th>

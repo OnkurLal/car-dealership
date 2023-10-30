@@ -41,7 +41,7 @@ function ServiceHistory() {
 
   return (
     <>
-      <h1 className="my-3">Service History</h1>
+      <h1 className="my-3 text-white">Service History</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-floating mb-3">
           <input
@@ -58,7 +58,7 @@ function ServiceHistory() {
           <button className="btn btn-secondary">Search</button>
         </div>
       </form>
-      <table className="table table-striped">
+      <table className="table table-striped table-dark opacity-75">
         <thead>
           <tr>
             <th>Vin</th>

@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../public/car.webp");
+  background-image: url("../public/rolls-royce.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -13,4 +13,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+input,select,option{
+  opacity:0.75 !important;
 }

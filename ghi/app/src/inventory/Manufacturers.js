@@ -17,8 +17,8 @@ const Manufacturers = () => {
 
   return (
     <>
-      <h1 className="my-3">Manufacturers</h1>
-      <table className="table table-striped">
+      <h1 className="my-3 text-white">Manufacturers</h1>
+      <table className="table table-striped table-dark opacity-75">
         <thead>
           <tr>
             <th>Name</th>

@@ -18,8 +18,8 @@ function VehicleModel() {
 
   return (
     <>
-      <h1 className="my-3">Vehicle Models</h1>
-      <table className="table table-striped">
+      <h1 className="my-3 text-white">Vehicle Models</h1>
+      <table className="table table-striped table-dark opacity-75">
         <thead>
           <tr>
             <th>Name</th>

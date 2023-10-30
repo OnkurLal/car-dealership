@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
-        <NavLink className="navbar-brand text-white" to="/">
+        <NavLink className="navbar-brand text-white ps-2 fs-3" to="/">
           CarCar
         </NavLink>
         <button
@@ -19,7 +19,7 @@ function Nav() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto ">
             <li className="nav-item dropdown px-5">
               <NavLink
                 className="nav-link dropdown-toggle text-white"
