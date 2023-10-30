@@ -19,7 +19,7 @@ function ListTechnicians() {
   return (
     <>
       <h1 className="my-3">Technicians</h1>
-      <table className="table table-striped">
+      <table className="table table-dark">
         <thead>
           <tr>
             <th>First Name</th>
