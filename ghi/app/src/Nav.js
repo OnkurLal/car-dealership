@@ -4,7 +4,7 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
-        <NavLink className="navbar-brand text-white ps-2 fs-3" to="/">
+        <NavLink className="navbar-brand text-white ps-2 fs-3" id="logo" to="/">
           CarCar
         </NavLink>
         <button

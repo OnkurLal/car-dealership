@@ -19,11 +19,12 @@ import CreateTechnicianForm from "./service/createTechnicians";
 import ListTechnicians from "./service/listTechnicians";
 import ListAppointments from "./service/listAppointments";
 import ServiceHistory from "./service/serviceHistory";
+import Footer from "./Footer";
 function App() {
   return (
     <BrowserRouter>
-      <Nav />
       <div className="container">
+        <Nav />
         <Routes>
           <Route index element={<MainPage />} />
           <Route path="manufacturers">
@@ -44,7 +45,7 @@ function App() {
             <Route path="history" element={<ServiceHistory />} />
           </Route>
           <Route path="technicians">
-          <Route index element={<ListTechnicians />} />
+            <Route index element={<ListTechnicians />} />
             <Route path="new" element={<CreateTechnicianForm />} />
           </Route>
           <Route path="salespeople">
@@ -61,6 +62,7 @@ function App() {
             <Route path="history" element={<SaleHistory />} />
           </Route>
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
