@@ -71,45 +71,6 @@ function Nav() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Service
-              </NavLink>
-              <ul className="dropdown-menu opacity-50">
-                <li>
-                  <Link className="dropdown-item" to="/technicians">
-                    Technicians
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/technicians/new">
-                    Add a Technician
-                  </Link>
-                </li>
-
-                <li>
-                  <Link className="dropdown-item" to="/appointments">
-                    Service Appointments
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/appointments/new">
-                    Create an Appointment
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/appointments/history">
-                    Service history
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item dropdown px-5">
-              <NavLink
-                className="nav-link dropdown-toggle text-white"
-                to="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
                 Sales
               </NavLink>
               <ul className="dropdown-menu opacity-50">
@@ -146,6 +107,45 @@ function Nav() {
                 <li>
                   <Link className="dropdown-item" to="/sales/history">
                     Sales History
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li className="nav-item dropdown px-5">
+              <NavLink
+                className="nav-link dropdown-toggle text-white"
+                to="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Service
+              </NavLink>
+              <ul className="dropdown-menu opacity-50">
+                <li>
+                  <Link className="dropdown-item" to="/technicians">
+                    Technicians
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/technicians/new">
+                    Add a Technician
+                  </Link>
+                </li>
+
+                <li>
+                  <Link className="dropdown-item" to="/appointments">
+                    Service Appointments
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/appointments/new">
+                    Create an Appointment
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/appointments/history">
+                    Service history
                   </Link>
                 </li>
               </ul>
