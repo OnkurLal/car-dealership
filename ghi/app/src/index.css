@@ -36,3 +36,11 @@ option {
 .footer {
   flex-shrink: 0;
 }
+
+.hero {
+  height: 60vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
