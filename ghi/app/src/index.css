@@ -6,6 +6,7 @@ body {
   background-image: url("../public/rolls-royce.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 code {
@@ -21,4 +22,17 @@ option {
 
 #logo {
   font-family: "Rubik Mono One", monospace;
+}
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  flex-shrink: 0;
 }

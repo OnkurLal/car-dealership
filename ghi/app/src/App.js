@@ -23,38 +23,45 @@ import Footer from "./Footer";
 function App() {
   return (
     <BrowserRouter>
-      <div className="container">
+      <div className="container app-wrapper">
         <Nav />
-        <Routes>
-          <Route index element={<MainPage />} />
-          <Route path="manufacturers" element={<Manufacturers />} />
+        <div className="content">
+          <Routes>
+            <Route index element={<MainPage />} />
+            <Route path="manufacturers" element={<Manufacturers />} />
 
-          <Route path="manufacturers/new" element={<ManufacturerForm />} />
+            <Route path="manufacturers/new" element={<ManufacturerForm />} />
 
-          <Route path="automobiles" element={<Automobiles />} />
+            <Route path="automobiles" element={<Automobiles />} />
 
-          <Route path="automobiles/new" element={<AutomobileForm />} />
+            <Route path="automobiles/new" element={<AutomobileForm />} />
 
-          <Route path="models" element={<VehicleModel />} />
+            <Route path="models" element={<VehicleModel />} />
 
-          <Route path="models/new" element={<CreateVehicleModel />} />
+            <Route path="models/new" element={<CreateVehicleModel />} />
 
-          <Route path="appointments" element={<ListAppointments />} />
+            <Route path="appointments" element={<ListAppointments />} />
 
-          <Route path="appointments/new" element={<CreateAppointmentForm />} />
-          <Route path="appointments/history" element={<ServiceHistory />} />
+            <Route
+              path="appointments/new"
+              element={<CreateAppointmentForm />}
+            />
+            <Route path="appointments/history" element={<ServiceHistory />} />
 
-          <Route path="technicians" element={<ListTechnicians />} />
-          <Route path="technicians/new" element={<CreateTechnicianForm />} />
-          <Route path="salespeople" element={<ListSalespeople />} />
-          <Route path="salespeople/new" element={<CreateSalesperson />} />
-          <Route path="customers" element={<ListCustomers />} />
-          <Route path="customers/new" element={<CreateCustomer />} />
-          <Route path="sales" element={<ListSales />} />
-          <Route path="sales/new" element={<CreateSale />} />
-          <Route path="sales/history" element={<SaleHistory />} />
-        </Routes>
-        <Footer />
+            <Route path="technicians" element={<ListTechnicians />} />
+            <Route path="technicians/new" element={<CreateTechnicianForm />} />
+            <Route path="salespeople" element={<ListSalespeople />} />
+            <Route path="salespeople/new" element={<CreateSalesperson />} />
+            <Route path="customers" element={<ListCustomers />} />
+            <Route path="customers/new" element={<CreateCustomer />} />
+            <Route path="sales" element={<ListSales />} />
+            <Route path="sales/new" element={<CreateSale />} />
+            <Route path="sales/history" element={<SaleHistory />} />
+          </Routes>
+        </div>
+        <footer className="mt-5">
+          <Footer />
+        </footer>
       </div>
     </BrowserRouter>
   );
