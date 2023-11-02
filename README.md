@@ -1,10 +1,5 @@
 # CarCar
 
-Team:
-
-- Onkur - Which microservice? Sales
-- Micheal - Which microservice? Service
-
 ## How to use this application
 
 - Clone this repo
@@ -47,12 +42,12 @@ The Service microservices will have three models. Those three models are Technic
 
 The services will have the following routes:
 
-- `http://localhost:8080/api/technicians/` - 'GET' request to get a list of all the technicians and 'POST' request to create a new technician.
-- `http://localhost:8080/api/technicians/` - 'DELETE' request to delete a specific technician.
-- `http://localhost:8080/api/appointments/` - 'GET' request to get a list of all the appointments and 'POST' request to create a new appointment.
-- `http://localhost:8080/api/appointments/` - 'DELETE' request to delete a specific appointment.
-- `http://localhost:8080/api/appointments/:id/cancel/`- uses a 'PUT' to set appointment status to cancelled.
-- `http://localhost:8080/api/appointments/:id/finish/`- uses a 'PUT' to set appointment status to finished.
+- `http://localhost:8080/api/technicians/` - `GET` request to get a list of all the technicians and `POST` request to create a new technician.
+- `http://localhost:8080/api/technicians/` - `DELETE` request to delete a specific technician.
+- `http://localhost:8080/api/appointments/` - `GET` request to get a list of all the appointments and `POST` request to create a new appointment.
+- `http://localhost:8080/api/appointments/` - `DELETE` request to delete a specific appointment.
+- `http://localhost:8080/api/appointments/:id/cancel/`- uses a `PUT` to set appointment status to cancelled.
+- `http://localhost:8080/api/appointments/:id/finish/`- uses a `PUT` to set appointment status to finished.
 
 ## Sales microservice
 
