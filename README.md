@@ -40,7 +40,7 @@ The automobile api will have the following endpoints:
 
 The Service microservices will have three models. Those three models are Technician,AutomobileVO, and an Appointment model. The Technician model will have the following fields: First name, Last name, and their employee ID. The AutomobileVO will have the Vin number and the Sold fields. Last is the Appointment model which will have the date_time, reason, status,vin number, and technician fields. The only two foreign keys that will be in this microservice will be the Technician field, and the AutomobileVO.
 
-The services will have the following routes:
+The services will have the following endpoints:
 
 - `http://localhost:8080/api/technicians/` - `GET` request to get a list of all the technicians and `POST` request to create a new technician.
 - `http://localhost:8080/api/technicians/` - `DELETE` request to delete a specific technician.
