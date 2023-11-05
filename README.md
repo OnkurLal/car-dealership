@@ -55,7 +55,7 @@ With in the sales microservice there will be four models including Salesperson, 
 
 Also in the Sales microservice there will be the poller. In the poller there will be an automobileVO model as well. The poller will reach out to the inventory api at `http://project-beta-inventory-api-1:8000/api/automobiles/` to get the current list of automobiles. Each of the automobiles will then have an instance created in the sales api.
 
-The sales api will have the following routes:
+The sales api will have the following endpoints:
 
 - `http://localhost:8090/api/salespeople/` This route is used to get the list of all salespeople using a `GET` request and create a new sales person using a `POST` request.
 - `http://localhost:8090/api/salespeople/:id/` This route is used to delete a specific salesperson using a `DELETE` request.
