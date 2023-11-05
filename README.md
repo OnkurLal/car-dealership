@@ -27,7 +27,7 @@ The following diagram shows the architecture of the CarCar application. The appl
 
 With in the inventory microservice there will be three models including Manufacturer, VehicleModel, and Automobile. The model for the Manufacturer will include a name field. The VehicleModel model will include the following fields: name, picture_url, and manufactuer_id(ForeignKey). The Automobile model will include the following fields: color, year, vin, and model(ForeignKey).
 
-The automobile api will have the following routes:
+The automobile api will have the following endpoints:
 
 - `http://localhost:8100/api/manufacturers/` This route is used to get the list of all manufacturers using a `GET` request and create a new manufacturer using a `POST` request.
 - `http://localhost:8100/api/manufacturers/:id/` This route is used to delete a specific manufacturer using a `DELETE` request, edit a manufacturer using a `POST` request, and get details on a specific manufacturer using a `GET` request.
